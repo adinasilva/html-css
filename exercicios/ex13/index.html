@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-a.s.ico.png" type="image/x-icon">
+    <style>
+        audio {
+            background-color: blue;
+        }
+    </style>
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens dinamicas</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamnho do seu
+        navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a produzir audios em HTML5</p>
+    <audio src="midia/Audio.mpeg.mídia.mpeg" controls autoplay></audio><br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/WhatsApp Audio 2022-02-06 at 09.31.24.mpeg" type="audio/mpeg">
+        <source src="midia/WhatsApp Audio 2022-02-06 at 09.31.24.mpeg" type="audio/ogg">
+        <source src="midia/WhatsApp Audio 2022-02-06 at 09.31.24.mpeg" type="audio/wav">
+
+        <p>imfelismente seu navegador não comsegue reproduzir este audio.</p>
+        <a href="midia/WhatsApp Audio 2022-02-06 at 09.31.24.mpeg" clique aqui para baixae o MP3></a>
+    </audio>
+</body>
+
+</html>

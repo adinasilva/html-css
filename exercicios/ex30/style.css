@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+        body {
+            background-color: #EBE5C5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-image: linear-gradient(to top, #084322, #2A9B5D);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 0px;
+            box-shadow: 0px 43px 7px rgba(0, 0, 0, 0.336);
+        }
+
+        nav {
+            background-color: #084322;
+            text-align: left;
+            padding: 10px;
+        }
+
+        nav>a {
+            color: #a5ecc5ef;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0px 8px 0px 8px;
+            padding: 3px 3px 3px 3px;
+        }
+
+        nav>a:hover {
+            background-color: #2A9B5D;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        main {
+            background-color: white;
+            margin: 0px 50px 500px 50px;
+            padding: 50px;
+            border: 0px 10px 0px 100px;
+            border-left: 100px;
+            box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.247);
+        }
+
+        #novo {
+            background-image: linear-gradient(to right, #7bc59c, white);
+
+        }
+
+        aside {
+            background-color: #83E1AD;
+            border: 40px 15px 15px 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.247);
+        }
+
+        .mais {
+            background-color: #1A5C37;
+            color: white;
+            padding: 10px 12px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .outro {
+            padding: 15px;
+        }
+       .site p {
+            background-color: #084322;
+            color: white;
+            text-align: center;
+            padding: 10px;
+
+        }
+        .site p > a{
+            color: white;
+            font-weight: bold;
+            text-decoration:none;
+        }
+        .site p > a:hover{
+            color: #7bc59c;
+            text-decoration: underline;
+        }
+    
