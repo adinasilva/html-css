@@ -7,36 +7,51 @@
     <link rel="shortcut icon" href="a.s.ico.png" type="image/x-icon">
     <title>| Teste de Imagens </title>
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=Palette+Mosaic&display=swap');
      body{
+         color: white;
          height: 100vh;
-         background-color: rgb(26, 26, 97);
          font-family: Arial, verdana, Helvetica, sans-serif;
+         /* background-color: rgb(26, 26, 97);
          background-image: url('imagens/wallpaper002.jpg');
          background-position: center center;
          background-repeat: no-repeat;
          background-size: cover;
+         background-attachment: fixed;  */
+         /* shorthand - background
+         color > image > position > repeat > [size] > attachment
+         */
+         background-size: cover;
+         background: rgb(26, 26, 97) url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+         background-size: cover;
      }
      main{
-         background-color: white;
-         width: 500px;
+         background-color: rgb(29, 29, 102);
+         width: 400px;
          text-align: justify;
          margin: auto;
          margin-top: 50px;
          padding: 30px;
          border-radius: 12px;
-         border: 2px solid rgba(0, 0, 0, 0.521);
          line-height: 1.3em;
-        
+        box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.356) ;
      }
         main h1 {
             text-align: center;
+            background-image:linear-gradient(to right, green, transparent);       
+            padding: 14px;     
+            font-family: 'Hurricane', cursive;    
+            font-size: 3em;            
         }
     </style>
 </head>
 <body>
     <main>
-     <h1>_Teste de Imagem de Fundo_</h1> <hr>
-     <p>No início a Web era somente texto, e era tedioso. Felizmente, não demorou muito para que a capacidade de incorporar imagens (e outros tipos de conteúdo mais interessantes) dentro das páginas da web fosse adicionada. Existem outros tipo de mídia para se considerar, mas é lógico começar com o humilde elemento [img], usado para inserir uma simples imagem em uma página web. Neste artigo, analisaremos como dominar seu uso, incluindo o básico, anotando-o com legendas usando o elemento, e detalhando como ele se relaciona com imagens de fundo do CSS.</p><hr>
+      <hr><h1>Fundo Fixo de Tela</h1> <hr>
+     <p>No início a Web era somente texto, e era tedioso. Felizmente, não demorou muito para que a capacidade de incorporar imagens (e outros tipos de conteúdo mais interessantes) dentro das páginas da web fosse adicionada. Existem outros tipo de mídia para se considerar, mas é lógico começar com o humilde elemento [img], usado para inserir uma simples imagem em uma página web. Neste artigo, analisaremos como dominar seu uso, incluindo o básico, anotando-o com legendas usando o elemento, e detalhando como ele se relaciona com imagens de fundo do CSS.</p>
+     <p>O próximo atributo que veremos é alt. Seu valor deve ser uma descrição textual da imagem, para uso em situações em que a imagem não pode ser vista/exibida ou leva muito tempo para renderizar devido a uma conexão lenta à Internet. Por exemplo, nosso código acima pode ser modificado da seguinte maneira:</p>
+     <p>No início a Web era somente texto, e era tedioso. Felizmente, não demorou muito para que a capacidade de incorporar imagens (e outros tipos de conteúdo mais interessantes) dentro das páginas da web fosse adicionada. Existem outros tipo de mídia para se considerar, mas é lógico começar com o humilde elemento [img], usado para inserir uma simples imagem em uma página web. Neste artigo, analisaremos como dominar seu uso, incluindo o básico, anotando-o com legendas usando o elemento, e detalhando como ele se relaciona com imagens de fundo do CSS.</p>
+     <p>O próximo atributo que veremos é alt. Seu valor deve ser uma descrição textual da imagem, para uso em situações em que a imagem não pode ser vista/exibida ou leva muito tempo para renderizar devido a uma conexão lenta à Internet. Por exemplo, nosso código acima pode ser modificado da seguinte maneira:</p>
      <p>O próximo atributo que veremos é alt. Seu valor deve ser uma descrição textual da imagem, para uso em situações em que a imagem não pode ser vista/exibida ou leva muito tempo para renderizar devido a uma conexão lenta à Internet. Por exemplo, nosso código acima pode ser modificado da seguinte maneira:</p>
     </main>
 </body>
