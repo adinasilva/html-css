@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=Palette+Mosaic&family=Passion+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: "Passion One", cursive;
+    --font03: 'Sriracha', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -9,17 +16,18 @@
 html,body{
     min-height: 100vh;
     background-color: darkgray;
-    font-family: Arial, verdana, Helvetica, sans-serif;
+    font-family: var(--font01);
 }
 header{
    
     color: white;
     background-color: black;
     text-align: center;
+    font-size: 1em;
 }
 header h1{
-    font-family: "Passion One", cursive;
-    font-size: 9em;
+    font-family:var(--font02);
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -39,6 +47,10 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-size:3.5vw;
+}
+section p{
+    font-family:var(--font03);
 }
 .normal{
  background-color:white;
@@ -50,14 +62,14 @@ section{
     background-color: rgb(12, 241, 230);
 }
 section.image > p {
-    background-color: rgba(0, 0, 0, 0.247);
+    display: inline-block;
     background-image: linear-gradient( to right, rgba(0, 0, 0, 0.219), transparent);
     padding-left: 10px;
-    width: 400px;
 }
 footer{
     color: white;
     text-align: center;
     background-color: black;
     padding: 10px;
+    font-size:1em;
 }
