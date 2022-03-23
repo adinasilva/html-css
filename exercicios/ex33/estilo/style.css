@@ -21,15 +21,17 @@ html,body{
 header{
    
     color: white;
-    background-color: black;
+    background-color:rgb(153, 31, 31);
     text-align: center;
     font-size: 1em;
+    text-shadow: 2px 2px 3px black;
 }
 header h1{
     font-family:var(--font02);
     font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
+    
 }
 a{
     color: white;
@@ -51,25 +53,40 @@ section{
 }
 section p{
     font-family:var(--font03);
+    padding-bottom: 2em;
 }
 .normal{
- background-color:white;
+    color:rgb(29, 6, 6) ;
+    background-color:white;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.342);
 }
 
-.image{
-    
+section.imagem{    
     color: white;
-    background-color: rgb(12, 241, 230);
+    background-size: cover;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.466);
+    background-attachment: fixed;
 }
-section.image > p {
+
+
+section#img001{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;   
+}   
+section#img002{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+section.imagem > p {
     display: inline-block;
-    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.219), transparent);
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.384), transparent);
     padding-left: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 footer{
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: rgb(100, 26, 26);
     padding: 10px;
-    font-size:1em;
 }
